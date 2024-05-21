@@ -1,3 +1,3 @@
-FROM archlinux:latest
+FROM archlinux
 RUN pacman -Syu
 
