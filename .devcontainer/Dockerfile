@@ -1,1 +1,3 @@
-1
+FROM archlinux:latest
+RUN pacman -Syu
+COPY . .
