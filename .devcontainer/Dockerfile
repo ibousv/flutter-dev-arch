@@ -1,3 +1,3 @@
-FROM archlinux
+FROM ghcr.io/archlinux/archlinux:latest
 RUN pacman -Syu
 
