@@ -11,7 +11,7 @@
       "extensions": [
         "Dart-Code.dart-code",
         "Dart-Code.flutter",
-        "Toroxx.vscode-avdmanager"
+        "toroxx.vscode-avdmanager"
       ]
     }
   }
