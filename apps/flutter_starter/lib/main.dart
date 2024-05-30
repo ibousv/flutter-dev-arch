@@ -1,40 +1,36 @@
-// ignore_for_file: camel_case_types
-
 import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
-import 'package:flutter_starter/onboarding/onboarding_page.dart';
+//import 'package:device_sim/device_sim.dart';
+import 'package:simulator/simulator.dart';
 
-void main(List<String> args) {
-  runApp(const MainApp());
+void main() {
+  //runApp(const App());
+  runSimulatorApp(const App());
 }
 
-class MainApp extends StatefulWidget {
-  const MainApp({super.key});
+class App extends StatefulWidget {
+  const App({super.key});
 
   @override
-  State<MainApp> createState() => _MyWidgetState();
+  State<App> createState() => HomeState();
 }
 
-class _MyWidgetState extends State<MainApp> {
+class HomeState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Gestion de dépenses',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      
-     initialRoute: '/onboarding',
-     getPages: [
-       GetPage(
-         name: '/onboarding',
-         page: () => const OnboardingView(),
-       ),
-     ],
-     debugShowCheckedModeBanner: true,
+    return const MaterialApp(
+      title: 'Expense-Tracker-App',
+      home: Home(),
     );
   }
 }
 
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      backgroundColor: Colors.black,
+    );
+  }
+}

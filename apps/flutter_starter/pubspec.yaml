@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   get: ^4.6.6
   simulator: ^0.3.0
+  device_sim: ^0.1.2
 
 dev_dependencies:
   flutter_test:
