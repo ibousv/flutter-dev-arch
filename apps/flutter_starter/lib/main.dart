@@ -1,8 +1,6 @@
 // ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:flutter_starter/splash_screen/splash_screen_page.dart';
-import 'package:get/get_core/get_core.dart';
 import 'package:get/route_manager.dart';
 import 'package:flutter_starter/onboarding/onboarding_page.dart';
 
@@ -27,15 +25,16 @@ class _MyWidgetState extends State<MainApp> {
           seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      debugShowCheckedModeBanner: true,
+      
      initialRoute: '/onboarding',
      getPages: [
        GetPage(
          name: '/onboarding',
-         page: () => OnboardingView(),
+         page: () => const OnboardingView(),
        ),
       
      ],
+     debugShowCheckedModeBanner: true,
     );
   }
 }
