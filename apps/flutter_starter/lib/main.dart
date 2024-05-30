@@ -32,7 +32,6 @@ class _MyWidgetState extends State<MainApp> {
          name: '/onboarding',
          page: () => const OnboardingView(),
        ),
-      
      ],
      debugShowCheckedModeBanner: true,
     );
