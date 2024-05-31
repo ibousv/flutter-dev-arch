@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-//import 'package:device_sim/device_sim.dart';
-import 'package:simulator/simulator.dart';
+import 'package:device_sim/device_sim.dart';
 
 void main() {
   //runApp(const App());
-  runSimulatorApp(const App());
+  runApp(const App());
 }
 
 class App extends StatefulWidget {
@@ -15,12 +14,19 @@ class App extends StatefulWidget {
 }
 
 class HomeState extends State<App> {
+  
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Expense-Tracker-App',
-      home: Home(),
-    );
+    return DeviceSim(
+      isEnabled: true,
+      devices: const [iphone13,iphone13ProMax,iphoneSeGen3],
+      builder: (context) {
+          return const MaterialApp(
+            //useInheritedMediaQuery: true,
+            title: 'Expense Tracker app',
+            home: Home(),
+          );
+        });
   }
 }
 
@@ -29,8 +35,11 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.black,
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 0, 0, 0),
+      body:Container(
+        
+      ),
     );
   }
 }
