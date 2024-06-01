@@ -25,8 +25,10 @@ class HomeState extends State<App> {
             //useInheritedMediaQuery: true,
             title: 'Expense Tracker app',
             home: Home(),
+            debugShowCheckedModeBanner: false,
           );
         });
+        
   }
 }
 
@@ -38,7 +40,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 0, 0, 0),
       body:Container(
-        
+       
       ),
     );
   }
